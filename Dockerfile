@@ -32,7 +32,7 @@ RUN chmod 777 /var/www/html
 
 # Preparing a test
 RUN touch /var/www/html/index.html
-RUN printf '%s\n' '<html><body><h1>I'm Running!</h1><br><h4>Test provided by: victorhugo.avila@easy-point.com</h4></body></html>' >> /var/www/html/index.html
+RUN printf '%s\n' '<html><body><h1>I\'m Running!</h1><br><h4>Test provided by: victorhugo.avila@easy-point.com</h4></body></html>' >> /var/www/html/index.html
 
 # Expose the 80 port and 443 port
 EXPOSE 22 80 443
