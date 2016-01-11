@@ -21,9 +21,9 @@ COPY apache2.conf /etc/apache2/apache2.conf
 COPY security.conf /etc/apache2/conf-enabled/
 
 # Securing the config
-RUN a2dissite default
+#RUN a2dissite default
 RUN rm -r /var/www/html/index.*
-RUN a2dismod autoindex -f
+#RUN a2dismod autoindex -f
 RUN apachectl restart
 
 # Setting permissions
